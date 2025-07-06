@@ -6,7 +6,7 @@ from tqdm import tqdm
 import os
 
 # === Config ===
-INPUT_PATH = "data/processed/filtered/filtered_complaints.csv.gz"
+INPUT_PATH = "data/processed/filtered/filtered_complaints.csv"
 OUTPUT_PATH = "data/processed/chunked/chunked_narratives.csv"
 CHUNK_SIZE = 300
 CHUNK_OVERLAP = 50
@@ -14,7 +14,8 @@ CHUNK_OVERLAP = 50
 def load_filtered_data(path: str) -> pd.DataFrame:
     return pd.read_csv(path)
 
-def chunk_narratives(df: pd.DataFrame, chunk_size=CHUNK_SIZE, overlap=CHUNK_OVERLAP) -> pd.DataFrame:
+def chunk_narratives(df: pd.DataFrame, chunk_size=CHUNK_SIZE, 
+                     overlap=CHUNK_OVERLAP) -> pd.DataFrame:
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=overlap,

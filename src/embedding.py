@@ -34,7 +34,8 @@ def embed_and_index(df: pd.DataFrame, persist_path: str, model_name: str):
     ]
 
     # Create and persist vector store
-    db = Chroma.from_documents(documents, embedding=embedder, persist_directory=persist_path)
+    db = Chroma.from_documents(documents, embedding=embedder,
+                                persist_directory=persist_path)
     db.persist()
 
     print(f" Vector store saved to {persist_path}")
