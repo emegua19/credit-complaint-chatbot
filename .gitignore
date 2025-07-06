@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Env
+.venv/
+env/
+venv/
+
+# OS
+.DS_Store
+
+# Data
+data/processed/
+vector_store/
+*.csv
+
+# Notebooks (optional)
+notebooks/*.ipynb
+
