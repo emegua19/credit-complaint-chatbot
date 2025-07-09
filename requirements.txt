@@ -18,10 +18,10 @@ huggingface_hub
 langchain
 langchain_community
 chromadb
-
+langchain-core
 # UI (pick one)
 streamlit
-#gradio==4.40.0
+gradio==4.40.0
 
 # Testing
 pytest
