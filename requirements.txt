@@ -25,3 +25,6 @@ gradio==4.40.0
 
 # Testing
 pytest
+
+# to download the .zip file from Google Drive using its file ID.
+gdown
