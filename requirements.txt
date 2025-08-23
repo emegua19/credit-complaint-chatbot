@@ -28,3 +28,6 @@ pytest
 
 # to download the .zip file from Google Drive using its file ID.
 gdown
+
+langchain_huggingface
+streamlit

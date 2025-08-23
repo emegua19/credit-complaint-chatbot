@@ -14,8 +14,8 @@ THEME = gr.themes.Default(primary_hue="emerald", secondary_hue="lime")  # Profes
 
 # Dynamically import components
 sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
-from retriever import ComplaintRetriever
-from generator import generate_answer  # Assuming generate_answer is exported
+from rag_pipline import ComplaintRetriever
+from rag_pipline import generate_answer  # Assuming generate_answer is exported
 
 # === Load LLM pipeline ===
 try:
